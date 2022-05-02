@@ -25,7 +25,7 @@ This is a Demo Performance Testing Challenge, developed by Douglas Urrea Ocampo 
 4. Set up Gatling Project
     * Maven: Create Maven Project Type adding `Gatling` as archetype
 5. Running Gatling
-4. run `mvn clean install gatling:test` in the path of the project
+6. run `mvn clean install gatling:test` in the path of the project
 
 ### ✏️ Step by Step tutorial
 
