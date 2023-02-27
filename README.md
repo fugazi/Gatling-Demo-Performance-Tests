@@ -17,15 +17,15 @@ This is a Demo Performance Testing Challenge, developed by Douglas Urrea Ocampo 
 
 ## 🛠️ Running the project:
 1. Download the project from GitHub
-    * Option 1: `git clone https://github.com/fugazi/demo-gatling-performance-tests.git`
+    * Option 1: `git clone https://github.com/fugazi/Gatling-Demo-Performance-Tests.git`
     * Option 2: Download it as a Zip file and extract it
 2. CD into the `demo-gatling-perf-tests` folder
 3. Set up Apache Maven
     * Maven: `Update Maven Archetype Catalog`
 4. Set up Gatling Project
-    * Maven: Create Maven Project Type in `Gatling`
+    * Maven: Create Maven Project Type adding `Gatling` as archetype
 5. Running Gatling
-4. run `mvn clean install gatling:test` in the path of the project
+6. run `mvn clean install gatling:test` in the path of the project
 
 ### ✏️ Step by Step tutorial
 
