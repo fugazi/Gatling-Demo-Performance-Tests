@@ -54,6 +54,12 @@ public class AirportGapPerfTest extends Simulation {
             .body(RawFileBody("airportDistance.json"))
             .check(status().is(200));
 
+    HttpRequestActionBuilder testPostAirportFavorite = http("Post a favorite airport to your Airport Gap account")
+            .post("/favorites/")
+            .header("Authorization", token)
+            .body(RawFileBody("airportFavorites.json"))
+            .check(status().is(200));
+
     HttpRequestActionBuilder testGetFavorites = http("Get all the favorite airports saved to your Airport Gap account")
             .get("/favorites")
             .header("Authorization", token)
