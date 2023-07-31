@@ -23,8 +23,9 @@ public class AirportGapPerfTest extends Simulation {
 
     /**
      * Authorization token for calling all endpoints for Performance testing
+     * Get your token from <a href="https://airportgap.dev-tester.com">Airport Gap</a>
      */
-    private static final String token = "4xjxdVnzfXXXyU8TLMUrwXV7";
+    private static final String token = "";
 
     /**
      * Define all the variables to be used in the simulation

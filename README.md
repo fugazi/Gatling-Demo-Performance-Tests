@@ -36,4 +36,4 @@ TBA
 * Gatling project Baseline: `demo-gatling-perf-tests`
 * Gatling simulations `AirportGapPerfTest.java` (with Bearer Token) into folder `src\test\java\simulations`
 * Gatling resources into folder `src\test\resources`
-* testName: `simulations`
+* Test folder: `simulations`
