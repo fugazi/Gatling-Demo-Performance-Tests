@@ -24,6 +24,7 @@ public class AirportGapPerfTest extends Simulation {
      * Define all the variables to be used in the simulation
      */
     private static final String AIRPORT_ID = "MDE";
+    private static final String AIRPORT_FAVORITE_ID = "1";
 
     /**
      * Define the http protocol builder to be simulated
@@ -63,5 +64,16 @@ public class AirportGapPerfTest extends Simulation {
     HttpRequestActionBuilder testGetFavorites = http("Get all the favorite airports saved to your Airport Gap account")
             .get("/favorites")
             .header("Authorization", token)
+            .check(status().is(200));
+
+    HttpRequestActionBuilder testGetFavoritesById = http("Get a favorite airport specified by the ID")
+            .get(String.format("/favorites/%s", AIRPORT_FAVORITE_ID))
+            .header("Authorization", token)
+            .check(status().is(200));
+
+    HttpRequestActionBuilder testPatchFavoriteAirport = http("Patch the note of one of your favorite airports")
+            .patch(String.format("/favorites/%s", AIRPORT_FAVORITE_ID))
+            .header("Authorization", token)
+            .body(RawFileBody("airportNotes.json"))
             .check(status().is(200));
 }
