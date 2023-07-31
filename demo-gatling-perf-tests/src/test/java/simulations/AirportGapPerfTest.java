@@ -1,5 +1,6 @@
 package simulations;
 
+import static io.gatling.javaapi.core.CoreDsl.RawFileBody;
 import static io.gatling.javaapi.http.HttpDsl.http;
 import static io.gatling.javaapi.http.HttpDsl.status;
 
@@ -46,5 +47,10 @@ public class AirportGapPerfTest extends Simulation {
     HttpRequestActionBuilder testGetAirportsById = http("Get the airport specified by the ID")
             .get(String.format("/api/airports/%s", AIRPORT_ID))
             .header("Authorization", token)
+            .check(status().is(200));
+
+    HttpRequestActionBuilder testPostAirportsDistance = http("Calculates the distance between two airports")
+            .post("/api/airports/distance/")
+            .body(RawFileBody("airportDistance.json"))
             .check(status().is(200));
 }
