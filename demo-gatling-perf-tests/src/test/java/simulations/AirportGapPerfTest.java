@@ -1,9 +1,16 @@
 package simulations;
 
 import static io.gatling.javaapi.core.CoreDsl.RawFileBody;
+import static io.gatling.javaapi.core.CoreDsl.constantConcurrentUsers;
+import static io.gatling.javaapi.core.CoreDsl.global;
+import static io.gatling.javaapi.core.CoreDsl.scenario;
+import static io.gatling.javaapi.core.OpenInjectionStep.atOnceUsers;
 import static io.gatling.javaapi.http.HttpDsl.http;
 import static io.gatling.javaapi.http.HttpDsl.status;
 
+import java.time.Duration;
+
+import io.gatling.javaapi.core.ScenarioBuilder;
 import io.gatling.javaapi.core.Simulation;
 import io.gatling.javaapi.http.HttpProtocolBuilder;
 import io.gatling.javaapi.http.HttpRequestActionBuilder;
@@ -76,4 +83,27 @@ public class AirportGapPerfTest extends Simulation {
             .header("Authorization", token)
             .body(RawFileBody("airportNotes.json"))
             .check(status().is(200));
+
+    /**
+     * Sets up the scenarios that will be launched in this Simulation.
+     */
+    ScenarioBuilder scnAirportGapPerfTest = scenario("Airport Gap Performance Test")
+            .exec(testGetAirports)
+            .exec(testGetAirportsById)
+            .exec(testPostAirportsDistance)
+            .exec(testPostAirportFavorite)
+            .exec(testGetFavorites)
+            .exec(testGetFavoritesById)
+            .exec(testPatchFavoriteAirport);
+
+    /**
+     * Sets up the parameters of the simulation to be launched by Gatling
+     */
+    public AirportGapPerfTest() {
+        setUp(scnAirportGapPerfTest.injectClosed(constantConcurrentUsers(5).during(Duration.ofSeconds(5))))
+                .protocols(httpConf)
+                .assertions(global().successfulRequests().percent().gt(99.0),
+                        global().responseTime().percentile(99.0).lt(6000)
+                );
+    }
 }
