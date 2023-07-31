@@ -20,7 +20,7 @@ public class AirportGapPerfTest extends Simulation {
     /**
      * Declare the base URL of the simulation on Gatling
      */
-    private final String domain = System.getProperty("domain", "https://airportgap.dev-tester.com/api");
+    private final String domain = System.getProperty("domain", "airportgap.dev-tester.com/api");
 
     /**
      * Authorization token for calling all endpoints for Performance testing
