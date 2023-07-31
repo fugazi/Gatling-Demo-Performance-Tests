@@ -4,7 +4,6 @@ import static io.gatling.javaapi.core.CoreDsl.RawFileBody;
 import static io.gatling.javaapi.core.CoreDsl.constantConcurrentUsers;
 import static io.gatling.javaapi.core.CoreDsl.global;
 import static io.gatling.javaapi.core.CoreDsl.scenario;
-import static io.gatling.javaapi.core.OpenInjectionStep.atOnceUsers;
 import static io.gatling.javaapi.http.HttpDsl.http;
 import static io.gatling.javaapi.http.HttpDsl.status;
 
@@ -25,7 +24,7 @@ public class AirportGapPerfTest extends Simulation {
     /**
      * Authorization token for calling all endpoints for Performance testing
      */
-    private static final String token = "BYdUpmNaHLpffkKLBxfQ5qUn";
+    private static final String token = "4xjxdVnzfXXXyU8TLMUrwXV7";
 
     /**
      * Define all the variables to be used in the simulation
@@ -37,12 +36,12 @@ public class AirportGapPerfTest extends Simulation {
      * Define the http protocol builder to be simulated
      */
     HttpProtocolBuilder httpConf = http
-            .baseUrl("https://" + domain + "/")
+            .baseUrl("https://" + domain)
             .acceptHeader("application/json")
             .contentTypeHeader("application/json")
             .acceptEncodingHeader("gzip")
             .header("Authorization", token)
-            .warmUp("https://" + domain + "/")
+            .warmUp("https://" + domain)
             .check(status().is(200));
 
     /**
