@@ -11,7 +11,7 @@ This is a Demo Performance Testing Challenge, developed by Douglas Urrea Ocampo 
 
 ## ✨ Pre-requisites:
 1. Install Gatling from [here](https://gatling.io)
-2. Install Scala Programming Language from [here](https://www.scala-lang.org)
+2. Install JAVA SDK from [here](https://aws.amazon.com/es/corretto/)
 3. Install git from [here](https://git-scm.com)
 4. Install Apache Maven from [here](https://maven.apache.org)
 
@@ -24,8 +24,9 @@ This is a Demo Performance Testing Challenge, developed by Douglas Urrea Ocampo 
     * Maven: `Update Maven Archetype Catalog`
 4. Set up Gatling Project
     * Maven: Create Maven Project Type adding `Gatling` as archetype
-5. Running Gatling
-6. run `mvn clean install gatling:test` in the path of the project
+5. Run `mvn clean install` in the path of the project
+6. Open a terminal or command prompt to Run Gatling test locally
+    * Run `mvn gatling:test`
 
 ### ✏️ Step by Step tutorial
 
@@ -33,6 +34,6 @@ TBA
 
 ### 🚴 Project configuration
 * Gatling project Baseline: `demo-gatling-perf-tests`
-* Gatling simulations `ArtChicagoAPI.scala` (without Authentication) into folder `src\test\simulations`
-* Gatling simulations `SpaceflightNewsAPI.scala` (with Bearer Token) into folder `src\test\simulations`
+* Gatling simulations `AirportGapPerfTest.java` (with Bearer Token) into folder `src\test\java\simulations`
+* Gatling resources into folder `src\test\resources`
 * testName: `simulations`
