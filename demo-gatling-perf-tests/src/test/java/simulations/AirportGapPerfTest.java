@@ -45,12 +45,17 @@ public class AirportGapPerfTest extends Simulation {
             .check(status().is(200));
 
     HttpRequestActionBuilder testGetAirportsById = http("Get the airport specified by the ID")
-            .get(String.format("/api/airports/%s", AIRPORT_ID))
-            .header("Authorization", token)
+            .get(String.format("/airports/%s", AIRPORT_ID))
             .check(status().is(200));
 
-    HttpRequestActionBuilder testPostAirportsDistance = http("Calculates the distance between two airports")
-            .post("/api/airports/distance/")
+    HttpRequestActionBuilder testPostAirportsDistance = http("Post Calculates the distance between two airports")
+            .post("/airports/distance/")
+            .header("Authorization", token)
             .body(RawFileBody("airportDistance.json"))
+            .check(status().is(200));
+
+    HttpRequestActionBuilder testGetFavorites = http("Get all the favorite airports saved to your Airport Gap account")
+            .get("/favorites")
+            .header("Authorization", token)
             .check(status().is(200));
 }
