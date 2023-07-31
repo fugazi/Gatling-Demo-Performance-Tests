@@ -1,0 +1,661 @@
+{
+  "type": "GROUP",
+"name": "All Requests",
+"path": "",
+"pathFormatted": "group_missing-name-b06d1",
+"stats": {
+    "name": "All Requests",
+    "numberOfRequests": {
+        "total": 140,
+        "ok": 30,
+        "ko": 110
+    },
+    "minResponseTime": {
+        "total": 129,
+        "ok": 135,
+        "ko": 129
+    },
+    "maxResponseTime": {
+        "total": 351,
+        "ok": 351,
+        "ko": 329
+    },
+    "meanResponseTime": {
+        "total": 180,
+        "ok": 238,
+        "ko": 164
+    },
+    "standardDeviation": {
+        "total": 62,
+        "ok": 80,
+        "ko": 45
+    },
+    "percentiles1": {
+        "total": 153,
+        "ok": 277,
+        "ko": 151
+    },
+    "percentiles2": {
+        "total": 171,
+        "ok": 312,
+        "ko": 162
+    },
+    "percentiles3": {
+        "total": 314,
+        "ok": 335,
+        "ko": 286
+    },
+    "percentiles4": {
+        "total": 336,
+        "ok": 347,
+        "ko": 309
+    },
+    "group1": {
+    "name": "t < 800 ms",
+    "htmlName": "t < 800 ms",
+    "count": 30,
+    "percentage": 21
+},
+    "group2": {
+    "name": "800 ms <= t < 1200 ms",
+    "htmlName": "t >= 800 ms <br> t < 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group3": {
+    "name": "t >= 1200 ms",
+    "htmlName": "t >= 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group4": {
+    "name": "failed",
+    "htmlName": "failed",
+    "count": 110,
+    "percentage": 79
+},
+    "meanNumberOfRequestsPerSecond": {
+        "total": 23.333333333333332,
+        "ok": 5.0,
+        "ko": 18.333333333333332
+    }
+},
+"contents": {
+"req_get-all-airport-397c8": {
+        "type": "REQUEST",
+        "name": "Get all airports in the Airport Gap database",
+"path": "Get all airports in the Airport Gap database",
+"pathFormatted": "req_get-all-airport-397c8",
+"stats": {
+    "name": "Get all airports in the Airport Gap database",
+    "numberOfRequests": {
+        "total": 20,
+        "ok": 15,
+        "ko": 5
+    },
+    "minResponseTime": {
+        "total": 251,
+        "ok": 270,
+        "ko": 251
+    },
+    "maxResponseTime": {
+        "total": 351,
+        "ok": 351,
+        "ko": 329
+    },
+    "meanResponseTime": {
+        "total": 301,
+        "ok": 309,
+        "ko": 276
+    },
+    "standardDeviation": {
+        "total": 27,
+        "ok": 19,
+        "ko": 30
+    },
+    "percentiles1": {
+        "total": 307,
+        "ok": 310,
+        "ko": 256
+    },
+    "percentiles2": {
+        "total": 315,
+        "ok": 316,
+        "ko": 288
+    },
+    "percentiles3": {
+        "total": 339,
+        "ok": 342,
+        "ko": 321
+    },
+    "percentiles4": {
+        "total": 349,
+        "ok": 349,
+        "ko": 327
+    },
+    "group1": {
+    "name": "t < 800 ms",
+    "htmlName": "t < 800 ms",
+    "count": 15,
+    "percentage": 75
+},
+    "group2": {
+    "name": "800 ms <= t < 1200 ms",
+    "htmlName": "t >= 800 ms <br> t < 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group3": {
+    "name": "t >= 1200 ms",
+    "htmlName": "t >= 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group4": {
+    "name": "failed",
+    "htmlName": "failed",
+    "count": 5,
+    "percentage": 25
+},
+    "meanNumberOfRequestsPerSecond": {
+        "total": 3.3333333333333335,
+        "ok": 2.5,
+        "ko": 0.8333333333333334
+    }
+}
+    },"req_get-the-airport-19607": {
+        "type": "REQUEST",
+        "name": "Get the airport specified by the ID",
+"path": "Get the airport specified by the ID",
+"pathFormatted": "req_get-the-airport-19607",
+"stats": {
+    "name": "Get the airport specified by the ID",
+    "numberOfRequests": {
+        "total": 20,
+        "ok": 15,
+        "ko": 5
+    },
+    "minResponseTime": {
+        "total": 129,
+        "ok": 135,
+        "ko": 129
+    },
+    "maxResponseTime": {
+        "total": 332,
+        "ok": 332,
+        "ko": 169
+    },
+    "meanResponseTime": {
+        "total": 160,
+        "ok": 166,
+        "ko": 142
+    },
+    "standardDeviation": {
+        "total": 42,
+        "ok": 47,
+        "ko": 15
+    },
+    "percentiles1": {
+        "total": 151,
+        "ok": 155,
+        "ko": 142
+    },
+    "percentiles2": {
+        "total": 167,
+        "ok": 167,
+        "ko": 142
+    },
+    "percentiles3": {
+        "total": 188,
+        "ok": 226,
+        "ko": 164
+    },
+    "percentiles4": {
+        "total": 303,
+        "ok": 311,
+        "ko": 168
+    },
+    "group1": {
+    "name": "t < 800 ms",
+    "htmlName": "t < 800 ms",
+    "count": 15,
+    "percentage": 75
+},
+    "group2": {
+    "name": "800 ms <= t < 1200 ms",
+    "htmlName": "t >= 800 ms <br> t < 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group3": {
+    "name": "t >= 1200 ms",
+    "htmlName": "t >= 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group4": {
+    "name": "failed",
+    "htmlName": "failed",
+    "count": 5,
+    "percentage": 25
+},
+    "meanNumberOfRequestsPerSecond": {
+        "total": 3.3333333333333335,
+        "ok": 2.5,
+        "ko": 0.8333333333333334
+    }
+}
+    },"req_post-calculates-2a543": {
+        "type": "REQUEST",
+        "name": "Post Calculates the distance between two airports",
+"path": "Post Calculates the distance between two airports",
+"pathFormatted": "req_post-calculates-2a543",
+"stats": {
+    "name": "Post Calculates the distance between two airports",
+    "numberOfRequests": {
+        "total": 20,
+        "ok": 0,
+        "ko": 20
+    },
+    "minResponseTime": {
+        "total": 133,
+        "ok": 0,
+        "ko": 133
+    },
+    "maxResponseTime": {
+        "total": 300,
+        "ok": 0,
+        "ko": 300
+    },
+    "meanResponseTime": {
+        "total": 169,
+        "ok": 0,
+        "ko": 169
+    },
+    "standardDeviation": {
+        "total": 43,
+        "ok": 0,
+        "ko": 43
+    },
+    "percentiles1": {
+        "total": 159,
+        "ok": 0,
+        "ko": 159
+    },
+    "percentiles2": {
+        "total": 167,
+        "ok": 0,
+        "ko": 167
+    },
+    "percentiles3": {
+        "total": 286,
+        "ok": 0,
+        "ko": 286
+    },
+    "percentiles4": {
+        "total": 297,
+        "ok": 0,
+        "ko": 297
+    },
+    "group1": {
+    "name": "t < 800 ms",
+    "htmlName": "t < 800 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group2": {
+    "name": "800 ms <= t < 1200 ms",
+    "htmlName": "t >= 800 ms <br> t < 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group3": {
+    "name": "t >= 1200 ms",
+    "htmlName": "t >= 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group4": {
+    "name": "failed",
+    "htmlName": "failed",
+    "count": 20,
+    "percentage": 100
+},
+    "meanNumberOfRequestsPerSecond": {
+        "total": 3.3333333333333335,
+        "ok": 0,
+        "ko": 3.3333333333333335
+    }
+}
+    },"req_post-a-favorite-196af": {
+        "type": "REQUEST",
+        "name": "Post a favorite airport to your Airport Gap account",
+"path": "Post a favorite airport to your Airport Gap account",
+"pathFormatted": "req_post-a-favorite-196af",
+"stats": {
+    "name": "Post a favorite airport to your Airport Gap account",
+    "numberOfRequests": {
+        "total": 20,
+        "ok": 0,
+        "ko": 20
+    },
+    "minResponseTime": {
+        "total": 132,
+        "ok": 0,
+        "ko": 132
+    },
+    "maxResponseTime": {
+        "total": 286,
+        "ok": 0,
+        "ko": 286
+    },
+    "meanResponseTime": {
+        "total": 159,
+        "ok": 0,
+        "ko": 159
+    },
+    "standardDeviation": {
+        "total": 32,
+        "ok": 0,
+        "ko": 32
+    },
+    "percentiles1": {
+        "total": 152,
+        "ok": 0,
+        "ko": 152
+    },
+    "percentiles2": {
+        "total": 162,
+        "ok": 0,
+        "ko": 162
+    },
+    "percentiles3": {
+        "total": 184,
+        "ok": 0,
+        "ko": 184
+    },
+    "percentiles4": {
+        "total": 266,
+        "ok": 0,
+        "ko": 266
+    },
+    "group1": {
+    "name": "t < 800 ms",
+    "htmlName": "t < 800 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group2": {
+    "name": "800 ms <= t < 1200 ms",
+    "htmlName": "t >= 800 ms <br> t < 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group3": {
+    "name": "t >= 1200 ms",
+    "htmlName": "t >= 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group4": {
+    "name": "failed",
+    "htmlName": "failed",
+    "count": 20,
+    "percentage": 100
+},
+    "meanNumberOfRequestsPerSecond": {
+        "total": 3.3333333333333335,
+        "ok": 0,
+        "ko": 3.3333333333333335
+    }
+}
+    },"req_get-all-the-fav-ebffe": {
+        "type": "REQUEST",
+        "name": "Get all the favorite airports saved to your Airport Gap account",
+"path": "Get all the favorite airports saved to your Airport Gap account",
+"pathFormatted": "req_get-all-the-fav-ebffe",
+"stats": {
+    "name": "Get all the favorite airports saved to your Airport Gap account",
+    "numberOfRequests": {
+        "total": 20,
+        "ok": 0,
+        "ko": 20
+    },
+    "minResponseTime": {
+        "total": 133,
+        "ok": 0,
+        "ko": 133
+    },
+    "maxResponseTime": {
+        "total": 305,
+        "ok": 0,
+        "ko": 305
+    },
+    "meanResponseTime": {
+        "total": 163,
+        "ok": 0,
+        "ko": 163
+    },
+    "standardDeviation": {
+        "total": 46,
+        "ok": 0,
+        "ko": 46
+    },
+    "percentiles1": {
+        "total": 152,
+        "ok": 0,
+        "ko": 152
+    },
+    "percentiles2": {
+        "total": 153,
+        "ok": 0,
+        "ko": 153
+    },
+    "percentiles3": {
+        "total": 287,
+        "ok": 0,
+        "ko": 287
+    },
+    "percentiles4": {
+        "total": 301,
+        "ok": 0,
+        "ko": 301
+    },
+    "group1": {
+    "name": "t < 800 ms",
+    "htmlName": "t < 800 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group2": {
+    "name": "800 ms <= t < 1200 ms",
+    "htmlName": "t >= 800 ms <br> t < 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group3": {
+    "name": "t >= 1200 ms",
+    "htmlName": "t >= 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group4": {
+    "name": "failed",
+    "htmlName": "failed",
+    "count": 20,
+    "percentage": 100
+},
+    "meanNumberOfRequestsPerSecond": {
+        "total": 3.3333333333333335,
+        "ok": 0,
+        "ko": 3.3333333333333335
+    }
+}
+    },"req_get-a-favorite--dd3f9": {
+        "type": "REQUEST",
+        "name": "Get a favorite airport specified by the ID",
+"path": "Get a favorite airport specified by the ID",
+"pathFormatted": "req_get-a-favorite--dd3f9",
+"stats": {
+    "name": "Get a favorite airport specified by the ID",
+    "numberOfRequests": {
+        "total": 20,
+        "ok": 0,
+        "ko": 20
+    },
+    "minResponseTime": {
+        "total": 130,
+        "ok": 0,
+        "ko": 130
+    },
+    "maxResponseTime": {
+        "total": 309,
+        "ok": 0,
+        "ko": 309
+    },
+    "meanResponseTime": {
+        "total": 156,
+        "ok": 0,
+        "ko": 156
+    },
+    "standardDeviation": {
+        "total": 37,
+        "ok": 0,
+        "ko": 37
+    },
+    "percentiles1": {
+        "total": 148,
+        "ok": 0,
+        "ko": 148
+    },
+    "percentiles2": {
+        "total": 153,
+        "ok": 0,
+        "ko": 153
+    },
+    "percentiles3": {
+        "total": 195,
+        "ok": 0,
+        "ko": 195
+    },
+    "percentiles4": {
+        "total": 286,
+        "ok": 0,
+        "ko": 286
+    },
+    "group1": {
+    "name": "t < 800 ms",
+    "htmlName": "t < 800 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group2": {
+    "name": "800 ms <= t < 1200 ms",
+    "htmlName": "t >= 800 ms <br> t < 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group3": {
+    "name": "t >= 1200 ms",
+    "htmlName": "t >= 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group4": {
+    "name": "failed",
+    "htmlName": "failed",
+    "count": 20,
+    "percentage": 100
+},
+    "meanNumberOfRequestsPerSecond": {
+        "total": 3.3333333333333335,
+        "ok": 0,
+        "ko": 3.3333333333333335
+    }
+}
+    },"req_patch-the-note--272ad": {
+        "type": "REQUEST",
+        "name": "Patch the note of one of your favorite airports",
+"path": "Patch the note of one of your favorite airports",
+"pathFormatted": "req_patch-the-note--272ad",
+"stats": {
+    "name": "Patch the note of one of your favorite airports",
+    "numberOfRequests": {
+        "total": 20,
+        "ok": 0,
+        "ko": 20
+    },
+    "minResponseTime": {
+        "total": 130,
+        "ok": 0,
+        "ko": 130
+    },
+    "maxResponseTime": {
+        "total": 284,
+        "ok": 0,
+        "ko": 284
+    },
+    "meanResponseTime": {
+        "total": 153,
+        "ok": 0,
+        "ko": 153
+    },
+    "standardDeviation": {
+        "total": 31,
+        "ok": 0,
+        "ko": 31
+    },
+    "percentiles1": {
+        "total": 146,
+        "ok": 0,
+        "ko": 146
+    },
+    "percentiles2": {
+        "total": 154,
+        "ok": 0,
+        "ko": 154
+    },
+    "percentiles3": {
+        "total": 174,
+        "ok": 0,
+        "ko": 174
+    },
+    "percentiles4": {
+        "total": 262,
+        "ok": 0,
+        "ko": 262
+    },
+    "group1": {
+    "name": "t < 800 ms",
+    "htmlName": "t < 800 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group2": {
+    "name": "800 ms <= t < 1200 ms",
+    "htmlName": "t >= 800 ms <br> t < 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group3": {
+    "name": "t >= 1200 ms",
+    "htmlName": "t >= 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group4": {
+    "name": "failed",
+    "htmlName": "failed",
+    "count": 20,
+    "percentage": 100
+},
+    "meanNumberOfRequestsPerSecond": {
+        "total": 3.3333333333333335,
+        "ok": 0,
+        "ko": 3.3333333333333335
+    }
+}
+    }
+}
+
+}

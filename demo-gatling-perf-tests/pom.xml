@@ -9,9 +9,10 @@
     <properties>
         <gatling.version>3.9.5</gatling.version>
         <gatling.maven.plugin.version>4.3.7</gatling.maven.plugin.version>
-        <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
+        <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
         <maven-jar-plugin.version>3.2.2</maven-jar-plugin.version>
-        <encoding>UTF-8</encoding>
+        <maven.compiler.release>17</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
@@ -47,9 +48,6 @@
                 </executions>
                 <configuration>
                     <runMultipleSimulations>true</runMultipleSimulations>
-                    <simulationsFolder>src/test/java/simulations</simulationsFolder>
-                    <resourcesFolder>src/test/resources</resourcesFolder>
-                    <failOnError>true</failOnError>
                 </configuration>
             </plugin>
             <plugin>
@@ -60,14 +58,6 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>${maven-jar-plugin.version}</version>
             </plugin>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <configuration>
-              <source>8</source>
-              <target>8</target>
-            </configuration>
-          </plugin>
         </plugins>
     </build>
 </project>
