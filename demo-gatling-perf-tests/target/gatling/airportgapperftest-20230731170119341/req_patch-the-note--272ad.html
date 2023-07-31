@@ -17,7 +17,7 @@
 <script src="js/highcharts-more.js"></script>
 <script src="js/theme.js"></script>
 <script src="js/unpack.js"></script>
-<title>Gatling Stats - Get all the favorite airports saved to your Airport Gap account</title>
+<title>Gatling Stats - Patch the note of one of your favorite airports</title>
 </head>
 <body>
 <div class="app-container">
@@ -162,13 +162,13 @@
 		    
 		    <tr>
 		    	<td class="error-col-1 total ko">status.find.is(200), but actually found 401<span class="value" style="display:none">0</span></td>
-		    	<td class="value error-col-2 total ko">14</td>
-		    	<td class="value error-col-3 total ko">70 %</td>
+		    	<td class="value error-col-2 total ko">13</td>
+		    	<td class="value error-col-3 total ko">65 %</td>
 		    </tr>
 		    <tr>
 		    	<td class="error-col-1 total ko">status.find.is(200), but actually found 429<span class="value" style="display:none">1</span></td>
-		    	<td class="value error-col-2 total ko">6</td>
-		    	<td class="value error-col-3 total ko">30 %</td>
+		    	<td class="value error-col-2 total ko">7</td>
+		    	<td class="value error-col-3 total ko">35 %</td>
 		    </tr>
 		</tbody>
     </table>
@@ -201,7 +201,7 @@
     </div>
 </div>
 <script>
-    var pageStats = stats.contents['req_get-all-the-fav-ebffe'].stats;
+    var pageStats = stats.contents['req_patch-the-note--272ad'].stats;
     $(document).ready(function() {
         $('.simulation-tooltip').popover({trigger:'hover', placement:'left'});
         setDetailsLinkUrl();
@@ -330,7 +330,7 @@ var responsetimeDistributionChart = new Highcharts.Chart({
     maskInside: false
   },
   xAxis: {
-    categories: ['136', '138', '139', '141', '143', '145', '146', '148', '150', '151', '153', '155', '157', '158', '160', '162', '164', '165', '167', '169', '170', '172', '174', '176', '177', '179', '181', '183', '184', '186', '188', '189', '191', '193', '195', '196', '198', '200', '202', '203', '205', '207', '209', '210', '212', '214', '215', '217', '219', '221', '222', '224', '226', '228', '229', '231', '233', '234', '236', '238', '240', '241', '243', '245', '247', '248', '250', '252', '254', '255', '257', '259', '260', '262', '264', '266', '267', '269', '271', '273', '274', '276', '278', '279', '281', '283', '285', '286', '288', '290', '292', '293', '295', '297', '298', '300', '302', '304', '305', '307'],
+    categories: ['129', '130', '132', '133', '135', '136', '138', '139', '140', '142', '143', '145', '146', '148', '149', '151', '152', '154', '155', '157', '158', '160', '161', '163', '164', '165', '167', '168', '170', '171', '173', '174', '176', '177', '179', '180', '182', '183', '185', '186', '188', '189', '190', '192', '193', '195', '196', '198', '199', '201', '202', '204', '205', '207', '208', '210', '211', '213', '214', '215', '217', '218', '220', '221', '223', '224', '226', '227', '229', '230', '232', '233', '235', '236', '238', '239', '240', '242', '243', '245', '246', '248', '249', '251', '252', '254', '255', '257', '258', '260', '261', '263', '264', '265', '267', '268', '270', '271', '273', '274'],
     tickInterval: 20
   },
   yAxis: {
@@ -367,7 +367,7 @@ type: 'column',
 color: '#f15b4f',
 name: 'KO',
 data: [
-  10.0,5.0,5.0,10.0,5.0,0.0,5.0,0.0,25.0,0.0,15.0,0.0,5.0,0.0,0.0,0.0,0.0,5.0,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5.0
+  5.0,0.0,0.0,0.0,10.0,10.0,5.0,0.0,5.0,0.0,10.0,0.0,5.0,5.0,10.0,0.0,5.0,10.0,5.0,0.0,0.0,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5.0
 ],
 tooltip: { yDecimals: 0, ySuffix: 'ms' }
 }
@@ -379,7 +379,7 @@ responsetimeDistributionChart.setTitle({
   useHTML: true
 });
 
-var responsetimepercentilesovertimeokPercentiles = unpack([[1690822694,null],[1690822695,null],[1690822696,null],[1690822697,null],[1690822698,null],[1690822699,null]]);
+var responsetimepercentilesovertimeokPercentiles = unpack([[1690822880,null],[1690822881,null],[1690822882,null],[1690822883,null],[1690822884,null],[1690822885,null],[1690822886,null]]);
 
 var responsetimepercentilesovertimeokPercentilesChart = new Highcharts.StockChart({
   chart: {
@@ -576,7 +576,7 @@ responsetimepercentilesovertimeokPercentilesChart.setTitle({
   useHTML: true
 });
 
-var requests = unpack([[1690822694,[0,0,0]],[1690822695,[4,0,4]],[1690822696,[3,0,3]],[1690822697,[3,0,3]],[1690822698,[5,0,5]],[1690822699,[5,0,5]]]);
+var requests = unpack([[1690822880,[0,0,0]],[1690822881,[3,0,3]],[1690822882,[2,0,2]],[1690822883,[5,0,5]],[1690822884,[3,0,3]],[1690822885,[4,0,4]],[1690822886,[3,0,3]]]);
 
 var requestsChart = new Highcharts.StockChart({
   chart: {
@@ -687,7 +687,7 @@ requestsChart.setTitle({
   useHTML: true
 });
 
-var responses = unpack([[1690822694,[0,0,0]],[1690822695,[3,0,3]],[1690822696,[3,0,3]],[1690822697,[4,0,4]],[1690822698,[5,0,5]],[1690822699,[5,0,5]]]);
+var responses = unpack([[1690822880,[0,0,0]],[1690822881,[1,0,1]],[1690822882,[4,0,4]],[1690822883,[5,0,5]],[1690822884,[3,0,3]],[1690822885,[3,0,3]],[1690822886,[4,0,4]]]);
 
 var requestsChart = new Highcharts.StockChart({
   chart: {
@@ -892,7 +892,7 @@ type: 'scatter',
 color: '#f15b4f',
 name: 'KO',
 data: [
-[24,286],[25,152],[27,154],[29,153],[30,153]
+[7,145],[23,148],[24,152],[26,159],[27,256],[28,173]
 ]}
 	]
 });
