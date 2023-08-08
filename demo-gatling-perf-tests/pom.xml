@@ -13,6 +13,7 @@
         <maven-jar-plugin.version>3.2.2</maven-jar-plugin.version>
         <maven.compiler.release>17</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <simulationClass>${className}</simulationClass>
     </properties>
 
     <dependencies>
