@@ -1,0 +1,27 @@
+{
+  "simulation": "simulations.AirportGapPerfTest",
+  "simulationId": "airportgapperftest-20230808192136580",
+  "start": 1691522497707,
+  "description": "",
+  "scenarios": ["Airport Gap Performance Test"],
+  "assertions": [
+{
+  "path": "Global",
+  "target": "percentage of successful events",
+  "condition": "is greater than",
+  "expectedValues": [99.0],
+  "result": false,
+  "message": "Global: percentage of successful events is greater than 99.0",
+  "actualValue": [21.768707482993197]
+},
+{
+  "path": "Global",
+  "target": "99th percentile of response time",
+  "condition": "is less than",
+  "expectedValues": [6000.0],
+  "result": true,
+  "message": "Global: 99th percentile of response time is less than 6000.0",
+  "actualValue": [392.0]
+}
+  ]
+}
