@@ -48,15 +48,15 @@ public class AirportGapPerfTest extends Simulation {
     /**
      * Declare all the Test scenarios (requests) to be simulated with Gatling
      */
-    HttpRequestActionBuilder testGetAirports = http("Get all airports in the Airport Gap database")
+    HttpRequestActionBuilder testGetAirports = http("Get all airports in the Airport Gap database.")
             .get("/airports")
             .check(status().is(200));
 
-    HttpRequestActionBuilder testGetAirportsById = http("Get the airport specified by the ID")
+    HttpRequestActionBuilder testGetAirportsById = http("Get the airport specified by the ID.")
             .get(String.format("/airports/%s", AIRPORT_ID))
             .check(status().is(200));
 
-    HttpRequestActionBuilder testPostAirportsDistance = http("Post Calculates the distance between two airports")
+    HttpRequestActionBuilder testPostAirportsDistance = http("Post Calculates the distance between two airports.")
             .post("/airports/distance/")
             .header("Authorization", token)
             .body(RawFileBody("airportDistance.json"))
