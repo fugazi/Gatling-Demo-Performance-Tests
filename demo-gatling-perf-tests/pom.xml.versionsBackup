@@ -7,7 +7,7 @@
     <version>1.0</version>
 
     <properties>
-        <gatling.version>3.11.3</gatling.version>
+        <gatling.version>3.11.2</gatling.version>
         <gatling.maven.plugin.version>4.3.7</gatling.maven.plugin.version>
         <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
         <maven-jar-plugin.version>3.4.1</maven-jar-plugin.version>
